@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+android:background="@drawable/backgroundimagecode"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background"
+
+        android:alpha=".6">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+<!--<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/feedback2"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FEEDBACK"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="60dp"/>
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#e9e9e9"
+              android:layout_marginBottom="90dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="90dp"
+              android:id="@+id/textFieldsLayout"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom ="3dp"
+android:layout_marginTop="20dp"
+                android:background="@drawable/item_holder"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtRideExprience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Educational Content "
+                    android:textColor="#FF8C45"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarRide"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:progressDrawable="@drawable/ratingbar_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="2.0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom ="3dp"
+                android:background="@drawable/item_holder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPinutExprience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pinut App: "
+                    android:textColor="#FF8C45"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarPinut"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/ratingbar_orange"
+                    android:layout_marginLeft="10dp"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="2.0" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#bdbfc1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom ="20dp"
+                android:background="@drawable/item_holder"
+                android:focusable="true"
+
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etxtComments"
+                    android:inputType="textMultiLine"
+                    android:hint="Comments "
+                    android:textColorHint="#FF8C45"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:lines="3"
+                    android:minLines="2"
+                    android:gravity="top|left"
+                    android:maxLines="5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+
+                    />
+            </LinearLayout>
+       <!-- </LinearLayout>-->
+
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:alpha="0.6"
+            android:background="#ea4c88"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/btnSubmit"
+            android:layout_gravity="bottom|center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+
+      <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_inside_circle"
+            android:layout_gravity="top"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true">
+        </ImageView>-->
+
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
